@@ -1,0 +1,60 @@
+.card {
+border: none;
+box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.1);
+}
+
+.card-body {
+background-image: linear-gradient(135deg, #eac2b7 0%, #f8f9fa 100%)
+/* background-color: #ffffff; */
+}
+
+.card-title {
+/* color: #333333; */
+font-weight: bold;
+}
+
+.form-control {
+border-radius: 0;
+border: none;
+border-bottom: 1px solid #cccccc;
+}
+
+.form-control:focus {
+box-shadow: none;
+border-color: #007bff;
+}
+
+.btn-primary {
+background-color: #007bff;
+border-color: #007bff;
+}
+
+.btn-primary:hover {
+background-color: #0056b3;
+border-color: #0056b3;
+}
+
+a {
+color: #007bff;
+}
+
+.login-image {
+background-image: url('https://source.unsplash.com/random/150x150/?nature');
+background-size: cover;
+background-position: center;
+}
+
+@media (max-width: 992px) {
+.login-image {
+    display: none;
+}
+}
+
+.btn-color{
+font-weight: bold;
+color: white;
+border: none;
+background-image: linear-gradient(135deg, #eac2b7 0%, #7a30ff 100%)
+/* background-image: linear-gradient(135deg, #eac2b7 0%, #f8f9fa 100%) */
+
+}

@@ -1,3 +1,5 @@
+/* Global Styles */
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -11,3 +13,155 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+
+/* Fade-in animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Slide-in animation */
+@keyframes slideIn {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+/* User List animations */
+.user-list {
+  animation: fadeIn 1s ease-in-out;
+}
+
+.user-card {
+  animation: slideIn 0.5s ease-in-out;
+  animation-fill-mode: both;
+}
+
+/* Profile Page animations */
+.profile {
+  animation: fadeIn 1s ease-in-out;
+}
+
+.profile-card {
+  animation: slideIn 0.5s ease-in-out;
+  animation-fill-mode: both;
+}
+
+/* Global Styles */
+
+body {
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  background-color: #f7f7f7;
+  margin: 0;
+  padding: 0;
+}
+
+.user-page {
+  text-align: center;
+}
+
+.user-card {
+  transition: transform 0.3s ease;
+}
+
+.user-card:hover {
+  transform: translateY(-5px);
+}
+
+.card {
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border: none;
+}
+
+
+.card-img-top {
+  object-fit: cover;
+  height: 300px; /* Adjust the height as needed */
+  width: 100%; /* Maintain image aspect ratio */
+}
+
+.card-body {
+  padding: 20px;
+  background-image: linear-gradient(135deg, #eac2b7 0%, #b323d594 100%)    /* background-color: #562aa4; */;
+}
+
+.card-title {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color:#aa5eb5
+}
+
+.card-text {
+  color: #888;
+}
+
+.btn-primary {
+  background-color: #e5ad00;
+  border-color: #e5ad00;
+  color: #fff;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #c19000;
+  border-color: #c19000;
+}
+
+.btn-success {
+  background-color: #3f8600;
+  border-color: #3f8600;
+  color: #fff;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.btn-success:hover {
+  background-color: #336c00;
+  border-color: #336c00;
+}
+
+.btn-danger {
+  background-color: #dc3545;
+  border-color: #dc3545;
+  color: #fff;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.btn-danger:hover {
+  background-color: #c82333;
+  border-color: #c82333;
+}
+
+@media (max-width: 767px) {
+  .user-card {
+    margin-bottom: 30px;
+  }
+}
+
+/* Background Styles */
+
+body:before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background-image: linear-gradient(135deg, #eac2b7 0%, #562aa4 100%);
+}
+.user-text-color{
+  color:white
+}
+
